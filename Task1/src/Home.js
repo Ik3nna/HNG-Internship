@@ -1,4 +1,5 @@
 import React from "react";
+import { links } from "./data";
 
 function Home() {
     return(
@@ -10,6 +11,16 @@ function Home() {
             <p>ikenna</p>
 
             {/* Links section */}
+            <article className="links-container">
+                {links.map((link)=>{
+                    const { name, linkTo } = link;
+                    return(
+                        <a href={linkTo} target="_blank">
+                            {name}
+                        </a>
+                    );
+                })}
+            </article>
         </main>
     );
 }

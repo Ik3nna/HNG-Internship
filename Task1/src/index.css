@@ -13,7 +13,10 @@ main {
   background-color: var(--backgroundColor);
   text-align: center;
   font-family: 'Inter', sans-serif;
-  margin-top: 50px;
+  margin-top: 30px;
+}
+img {
+  cursor: pointer;
 }
 p {
   color: var(--text);
@@ -25,4 +28,25 @@ p {
 }
 p:nth-of-type(2) {
   display: none;
+}
+
+
+.links-container {
+  margin-top: 50px;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: var(--text);
+  background-color: var(--linkBackground);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: capitalize;
+  margin: 20px auto;
+  width: 1152px;
+  padding: 24px 32px;
+  border-radius: 8px;
+  border: 1px solid var(--linkBackground);
+  cursor: pointer;
 }
