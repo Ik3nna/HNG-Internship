@@ -6,6 +6,7 @@
 :root {
   --backgroundColor: #ffffff;
   --linkBackground: #EAECF0;
+  --iconsBorder: #d0d5dd;
   --text: #101828;
 }
 
@@ -17,6 +18,25 @@ main {
 }
 img {
   cursor: pointer;
+}
+.icons {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px dashed var(--iconsBorder);
+  position: absolute;
+  top: 5%;
+  right: 30%;
+  cursor: pointer;
+}
+.icons img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.icons img:last-child {
+  display: none;
 }
 p {
   color: var(--text);
@@ -32,7 +52,7 @@ p:nth-of-type(2) {
 
 
 .links-container {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 a {
   display: block;
@@ -64,5 +84,14 @@ a {
 @media (max-width: 575px) {
   a {
     width: 343px;
+  }
+  .icons {
+    right: 10%;
+  }
+  .icons img:first-of-type {
+    display: none;
+  }
+  .icons img:last-child {
+    display: block;
   }
 }

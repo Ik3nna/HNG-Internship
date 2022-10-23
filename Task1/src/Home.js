@@ -1,11 +1,15 @@
 import React from "react";
+import ShareBtn from "./shareBtn";
 import { links } from "./data";
 
 function Home() {
+    
     return(
         <main>
             {/* Profile Section */}
             <img src="/assets/profile__img.png" alt="profile_img" />
+
+            <ShareBtn />
 
             <p>_Ik3nna</p>
             <p>ikenna</p>
@@ -13,9 +17,9 @@ function Home() {
             {/* Links section */}
             <article className="links-container">
                 {links.map((link)=>{
-                    const { name, linkTo } = link;
+                    const { id, name, linkTo } = link;
                     return(
-                        <a href={linkTo} target="_blank">
+                        <a key={id} href={linkTo} target="_blank">
                             {name}
                         </a>
                     );
