@@ -42,11 +42,27 @@ a {
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
-  text-transform: capitalize;
   margin: 20px auto;
   width: 1152px;
   padding: 24px 32px;
   border-radius: 8px;
   border: 1px solid var(--linkBackground);
   cursor: pointer;
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  a {
+    width: 85vw;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  a {
+    width: 85vw;
+  }
+}
+@media (max-width: 575px) {
+  a {
+    width: 343px;
+  }
 }

@@ -1,32 +1,32 @@
 export const links = [
     {
         id: 1,
-        name: "twitter link",
+        name: "Twitter Link",
         linkTo: "https://twitter.com/_ik3nna"
     },
     {
         id: 2,
-        name: "zuri team",
+        name: "Zuri Team",
         linkTo: "https://training.zuri.team"
     },
     {
         id: 3,
-        name: "zuri books",
+        name: "Zuri Books",
         linkTo: "http://books.zuri.team"
     },
     {
         id: 4,
-        name: "python books",
+        name: "Python Books",
         linkTo: "https://books.zuri.team/python-for-beginners?ref_id=ikenna"
     },
     {
         id: 5,
-        name: "background check for coders",
+        name: "Background Check for Coders",
         linkTo: "https://background.zuri.team"
     },
     {
         id: 6,
-        name: "design books",
+        name: "Design Books",
         linkTo: "https://books.zuri.team/design-rules"
     }
 ]
