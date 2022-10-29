@@ -7,19 +7,19 @@ function Home() {
     return(
         <main>
             {/* Profile Section */}
-            <img src="/assets/profile__img.png" alt="profile_img" />
+            <img src="/assets/profile__img.png" id="profile__img" alt="profile_img" />
 
             <ShareBtn />
 
-            <p>_Ik3nna</p>
-            <p>ikenna</p>
+            <p id="twitter">_Ik3nna</p>
+            <p id="slack">Nduks</p>
 
             {/* Links section */}
             <article className="links-container">
                 {links.map((link)=>{
                     const { id, name, linkTo } = link;
                     return(
-                        <a key={id} href={linkTo} target="_blank">
+                        <a key={id} href={linkTo} rel="noreferrer" target="_blank">
                             {name}
                         </a>
                     );
