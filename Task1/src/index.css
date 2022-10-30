@@ -8,6 +8,7 @@
   --linkBackground: #EAECF0;
   --iconsBorder: #d0d5dd;
   --text: #101828;
+  --footer: #667085;
 }
 
 main {
@@ -42,7 +43,7 @@ button {
 .icons img:last-child {
   display: none;
 }
-p {
+#twitter, #slack {
   color: var(--text);
   font-size: 20px;
   text-transform: capitalize;
@@ -50,7 +51,7 @@ p {
   line-height: 32px;
   margin-top: 20px;
 }
-p:nth-of-type(2) {
+#slack {
   display: none;
 }
 
@@ -73,20 +74,66 @@ a {
   border: 1px solid var(--linkBackground);
   cursor: pointer;
 }
+.footer-icons {
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.footer-icons img {
+  margin-right: 20px;
+}
+
+footer {
+  margin: 50px auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--footer);
+}
+hr {
+  width: 1152px;
+  margin: auto;
+  height: 1px;
+  background-color: var(--footer);
+  margin-bottom: 20px;
+}
+footer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1152px;
+  margin: auto;
+}
 
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  a {
+  a, hr, footer div {
     width: 85vw;
   }
 }
-@media (min-width: 576px) and (max-width: 991px) {
-  a {
+@media (min-width: 768px) and (max-width: 991px) {
+  a, hr, footer div {
     width: 85vw;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  a, hr, footer div {
+    width: 85vw;
+  }
+  footer div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer div p {
+    margin: 20px 0;
+  }
+  footer img {
+    max-width: 150px;
+    width: 100%;
   }
 }
 @media (max-width: 575px) {
-  a {
+  a, hr, footer div {
     width: 90vw;
   }
   .icons {
@@ -97,6 +144,17 @@ a {
   }
   .icons img:last-child {
     display: block;
+  }
+  footer div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer div p {
+    margin: 15px 0;
+  }
+  footer img {
+    max-width: 140px;
+    width: 100%;
   }
 }
 
