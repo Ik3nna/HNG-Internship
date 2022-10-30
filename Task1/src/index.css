@@ -17,6 +17,11 @@ main {
   font-family: 'Inter', sans-serif;
   margin-top: 30px;
 }
+#profile__img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+}
 img {
   cursor: pointer;
 }
@@ -64,7 +69,7 @@ a {
   text-decoration: none;
   color: var(--text);
   background-color: var(--linkBackground);
-  font-weight: 500;
+  font-weight: 500 !important;
   font-size: 18px;
   line-height: 28px;
   margin: 20px auto;

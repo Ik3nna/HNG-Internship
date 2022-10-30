@@ -9,7 +9,7 @@ function Home() {
     return(
         <main>
             {/* Profile Section */}
-            <img src="/assets/profile__img.png" id="profile__img" alt="profile_img" />
+            <img src="/assets/IMG_1495.JPG" id="profile__img" alt="profile_img" />
 
             <ShareBtn />
 
@@ -21,7 +21,7 @@ function Home() {
                 {links.map((link)=>{
                     const { id, name, linkTo } = link;
                     return(
-                        <a key={id} href={linkTo} rel="noreferrer" target="_blank">
+                        <a key={id} id={id} href={linkTo} rel="noreferrer" target="_blank">
                             {name}
                         </a>
                     );
