@@ -2,6 +2,9 @@ import React from "react";
 import { Button, Form, Row, Col } from "react-bootstrap";
 
 function Contact () {
+    const handleSubmit = (e)=> {
+        alert("Nduks will get back to you as soon as possible");
+    }
     
     return(
         <section className="contact mt-4">
@@ -9,7 +12,7 @@ function Contact () {
 
             <p>Hi there, contact me to ask me about anything you have in mind.</p>
 
-            <Form className="mt-4">
+            <Form className="mt-4" onSubmit={handleSubmit}>
                 <Row>
                     <Col md={6}>
                         <Form.Group className="mb-3" controlId="first_name">
