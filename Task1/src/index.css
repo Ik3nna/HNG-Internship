@@ -79,6 +79,9 @@ a {
   border: 1px solid var(--linkBackground);
   cursor: pointer;
 }
+a:hover {
+  color: var(--footer) !important;
+}
 .footer-icons {
   text-align: center;
   margin-top: 20px;
