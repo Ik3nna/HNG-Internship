@@ -1,6 +1,7 @@
 import React from "react";
 import Home from "./Components/Home";
 import Contact from "./Components/contact";
+import Footer from "./Components/footer";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/*" element={<Navigate replace to="/" />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

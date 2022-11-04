@@ -40,7 +40,7 @@ function Contact () {
                     <Form.Check type="checkbox" label="You agree to providing your data to Nduks who may contact you." />
                 </Form.Group>
 
-                <Button variant="primary" type="submit" id="btn__submit">
+                <Button className="mb-5" variant="primary" type="submit" id="btn__submit">
                     Send message
                 </Button>
             </Form>

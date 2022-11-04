@@ -2,7 +2,6 @@ import React from "react";
 import ShareBtn from "./shareBtn";
 import { links } from "./data";
 import { GrGithub } from "react-icons/gr";
-import Footer from "./footer";
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -37,8 +36,6 @@ function Home() {
                 <img src="/assets/slack.svg" alt="slack-icon" />
                 <GrGithub size="23px" />
             </div>
-
-            <Footer />
         </main>
     );
 }
