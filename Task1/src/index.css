@@ -9,8 +9,12 @@
   --iconsBorder: #d0d5dd;
   --text: #101828;
   --footer: #667085;
+  --label: #344054;
+  --contactH2: #101828;
+  --colorP: #475467
 }
 
+/* Home page */
 main {
   background-color: var(--backgroundColor);
   text-align: center;
@@ -114,6 +118,49 @@ footer div {
 }
 
 
+/* Contact page */
+.contact {
+  max-width: 100%;
+  width: 70%;
+  margin: auto;
+}
+.contact h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: var(--contactH2);
+}
+.contact p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--colorP);
+}
+.contact label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--label);
+}
+input::placeholder {
+  color: var(--footer);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.form-check-label {
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: var(--colorP) !important;
+}
+#btn__submit {
+  width: 100%;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
 @media (min-width: 992px) and (max-width: 1199px) {
   a, hr, footer div {
     width: 85vw;
@@ -139,6 +186,9 @@ footer div {
     max-width: 150px;
     width: 100%;
   }
+  .contact {
+    width: 90%;
+  }
 }
 @media (max-width: 575px) {
   a, hr, footer div {
@@ -152,6 +202,9 @@ footer div {
   }
   .icons img:last-child {
     display: block;
+  }
+  .contact {
+    width: 90%;
   }
   footer div {
     flex-direction: column;

@@ -4,12 +4,12 @@ import { Button, Form, Row, Col } from "react-bootstrap";
 function Contact () {
     
     return(
-        <section>
+        <section className="contact mt-4">
             <h2>Contact Me</h2>
 
             <p>Hi there, contact me to ask me about anything you have in mind.</p>
 
-            <Form>
+            <Form className="mt-4">
                 <Row>
                     <Col md={6}>
                         <Form.Group className="mb-3" controlId="first_name">
@@ -36,7 +36,7 @@ function Contact () {
                     <Form.Control as="textarea" rows={5} placeholder="Send me a message and I'll reply you as soon as possible..." />
                 </Form.Group>
 
-                <Form.Group className="mb-3" controlId="Checkbox">
+                <Form.Group className="mb-4" controlId="Checkbox">
                     <Form.Check type="checkbox" label="You agree to providing your data to Nduks who may contact you." />
                 </Form.Group>
 
