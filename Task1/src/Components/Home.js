@@ -3,6 +3,7 @@ import ShareBtn from "./shareBtn";
 import { links } from "./data";
 import { GrGithub } from "react-icons/gr";
 import Footer from "./footer";
+import { Link } from "react-router-dom";
 
 function Home() {
     
@@ -26,6 +27,10 @@ function Home() {
                         </a>
                     );
                 })}
+
+                <Link to="/contact" id="contact">
+                    Contact Me
+                </Link>
             </article>
 
             <div className="footer-icons">
