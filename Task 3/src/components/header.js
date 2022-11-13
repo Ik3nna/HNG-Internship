@@ -10,7 +10,7 @@ function Header() {
             <header ref={stickyRef} className={`${sticky && "fixed-nav"}`}>
                 <div className="head">
                     <Link to="/" className="logo">
-                        <img src="/assets/logo.svg" alt="logo" />
+                        <img src="/assets/logo.svg" alt="logo" className="img-logo" />
                     </Link>
 
                     <nav>

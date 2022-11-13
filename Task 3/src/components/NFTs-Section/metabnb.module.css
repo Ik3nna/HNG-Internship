@@ -1,0 +1,36 @@
+.content {
+   background: var(--buttonsBackground);
+}
+.content .row {
+    max-width: 100%;
+    width: 92%;
+    margin: auto;
+    padding: 100px 0;
+}
+.content h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    background: var(--heroBackground);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.content p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35px;
+    background: var(--heroBackground);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.content a {
+    background: var(--heroBackground);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--herosubTexts);
+    padding: 10px 20px;
+    border-radius: 8px;
+}

@@ -12,6 +12,7 @@
     --placeholderText:  #B8B8B8;
     --adventureHeader: #000000;
     --footer: #1D1D1E;
+    --footerText: #F1F3F9;
     --fontFamily: 'Red Rose', cursive;
 }     
 body {
@@ -57,7 +58,7 @@ button {
 .fixed-nav a {
     color: var(--backgroundColor);
 }
-header img {
+.img-logo {
     max-width: 200px;
 }
 .logo {
@@ -91,11 +92,55 @@ header button {
 }
 
 
+/* Footer section */
+footer {
+    background: var(--footer);
+}
+footer article {
+    max-width: 100%;
+    width: 90%;
+    margin: auto;
+    padding: 50px 0px 30px;
+    justify-content: space-between;
+}
+footer article > div {
+    display: flex;
+    flex-direction: column;
+}
+footer h6 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--backgroundColor);
+}
+footer p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--footerText);
+}
+footer a {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 35px;
+    color: var(--footerText);
+}
+footer a:hover {
+    color: var(--placeholderText);
+}
 
+
+/* Coming-soon section */
+.soon {
+    margin: 100px auto;
+    max-width: 100%;
+    width: 90%;
+}
 
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    header img {
+    .img-logo {
         max-width: 170px;
     }
     .logo {
@@ -106,7 +151,7 @@ header button {
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-    header img {
+    .img-logo {
         max-width: 140px;
     }
     .logo {
