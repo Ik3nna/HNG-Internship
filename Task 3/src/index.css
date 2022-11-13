@@ -1,0 +1,32 @@
+*,::before,::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --backgroundColor: #FFFFFF;
+    --heroBackground: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+    --heroTexts: #434343;
+    --herosubTexts: linear-gradient(90deg, #A02279 100%, #FFC089 60%);
+    --buttonsBackground: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+    --placeholderText:  #B8B8B8;
+    --fontFamily: 'Red Rose', cursive;
+}     
+body {
+    font-family: var(--fontFamily);
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    cursor: pointer;
+}
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+}
