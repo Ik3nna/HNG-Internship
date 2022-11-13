@@ -10,6 +10,7 @@
     --herosubTexts: #A02279;
     --buttonsBackground: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
     --placeholderText:  #B8B8B8;
+    --footer: #1D1D1E;
     --fontFamily: 'Red Rose', cursive;
 }     
 body {
@@ -33,7 +34,7 @@ button {
 
 
 /* Header-section */
-header {
+.head {
     background: var(--heroBackground);
     display: flex;
     align-items: center;
@@ -42,9 +43,23 @@ header {
     margin: auto;
     position: relative;
 }
+.fixed-nav {
+    background: var(--footer);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.fixed-nav .head {
+    background: var(--footer);
+}
+.fixed-nav a {
+    color: var(--backgroundColor);
+}
 header img {
-    margin-right: 10%;
     max-width: 200px;
+}
+.logo {
+    margin-right: 10%;
 }
 header a {
     font-weight: 400;
@@ -80,6 +95,8 @@ header button {
 @media (min-width: 992px) and (max-width: 1199px) {
     header img {
         max-width: 170px;
+    }
+    .logo {
         margin-right: 7%;
     }
     header a {
@@ -89,6 +106,8 @@ header button {
 @media (min-width: 768px) and (max-width: 991px) {
     header img {
         max-width: 140px;
+    }
+    .logo {
         margin-right: 0px;
     }
     header a {
