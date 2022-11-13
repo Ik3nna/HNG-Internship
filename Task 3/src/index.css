@@ -10,6 +10,7 @@
     --herosubTexts: #A02279;
     --buttonsBackground: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
     --placeholderText:  #B8B8B8;
+    --adventureHeader: #000000;
     --footer: #1D1D1E;
     --fontFamily: 'Red Rose', cursive;
 }     
@@ -48,6 +49,7 @@ button {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 2;
 }
 .fixed-nav .head {
     background: var(--footer);
