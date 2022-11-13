@@ -65,6 +65,10 @@ button {
 .logo {
     margin-right: 10%;
 }
+nav ul {
+    display: flex;
+    align-items: center;
+}
 header a {
     font-weight: 400;
     font-size: 20px;
@@ -193,5 +197,125 @@ footer a:hover {
     }
     header a {
         margin-right: 15px;
+    }
+}
+@media (max-width: 767px) {
+    .head {
+        padding: 15px 0;
+    }
+    nav {
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        max-width: 350px;
+        width: 100%;
+        height: 100%;
+        background-color: var(--adventureHeader);
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 60px;
+        margin-left: -33px;
+    }
+    header a {
+        color: var(--backgroundColor);
+        margin: 0px 0px 20px;
+        padding-left: 40px;
+    }
+    header button {
+        position: static;
+        margin-left: 40px;
+    }
+    .active nav {
+        transform: translateX(0);
+        transition: 0.5s ease-out;
+    }
+    .activeLink {
+        border-left: 5px solid #A02279;
+        border-bottom: none;
+    }
+
+
+    /* Hamburger Menu */
+    .hamburger-menu {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 17px;
+        right: 0;
+        cursor: pointer;
+        z-index: 12;
+    }
+    .hamburger-menu .bar {
+        position: relative;
+        width: 100%;
+        height: 3px;
+        background-color: var(--herosubTexts);
+        border-radius: 5px;
+        transition: 0.7s;
+    }
+    .bar::after, .bar::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: var(--herosubTexts);
+        border-radius: 5px;
+    }
+    .bar::before {
+        transform: translateY(-8px);
+    }
+    .bar::after {
+        transform: translateY(8px);
+    }
+    .active .hamburger-menu .bar {
+        background-color: transparent;
+    }
+    .active .bar::before {
+        transform: translateY(0) rotate(-45deg);
+    }
+    .active .bar::after {
+        transform: translateY(0) rotate(45deg);
+    }
+
+
+    /* Overlay */ 
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        pointer-events: none;
+        background-color: var(--footer);
+        z-index: 5;
+    }
+    .active .overlay {
+        pointer-events: all;
+        opacity: 0.7;
+    }
+
+
+    /* Coming soon */
+    .soon h2 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+@media (max-width: 575px) {
+    .img-logo {
+        max-width: 170px;
+    }
+    .hamburger-menu {
+        top: 17px;
+        right: 0;
     }
 }

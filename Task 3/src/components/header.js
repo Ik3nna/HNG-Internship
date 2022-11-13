@@ -1,20 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import useSticky from "./utils";
 
 function Header() {
     const { sticky, stickyRef } = useSticky();
+    const [active, setActive] = useState(false);
 
     return(
         <>
-            <header ref={stickyRef} className={`${sticky && "fixed-nav"}`}>
+            <header ref={stickyRef} className={`${active && "active"} ${sticky && "fixed-nav"}`}>
                 <div className="head">
                     <Link to="/" className="logo">
                         <img src="/assets/logo.svg" alt="logo" className="img-logo" />
                     </Link>
 
                     <nav>
-                        <ul className="d-flex align-items-center mt-4">
+                        <ul className="mt-4">
                             <li>
                                 <NavLink to="/home" className={({isActive})=> isActive ? "activeLink" : null}>
                                     Home
@@ -49,7 +50,7 @@ function Header() {
 
                     <div className="overlay"></div>
                     
-                    <div className="hamburger-menu">
+                    <div className="hamburger-menu" onClick={()=>setActive(!active)}>
                         <div className="bar"></div>
                     </div>
                 </div>
