@@ -23,13 +23,75 @@ a {
 }
 img {
     cursor: pointer;
+    width: 100%;
 }
 button {
     border: none;
     outline: none;
     cursor: pointer;
-    background: none;
 }
 
 
 /* Header-section */
+header {
+    background: var(--heroBackground);
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+header img {
+    margin-right: 10%;
+    max-width: 200px;
+}
+header a {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--heroTexts);
+    display: inline-block;
+    margin-right: 30px;
+}
+.activeLink {
+    border-bottom: 3px solid #A02279;
+}
+header a:hover {
+    color: var(--placeholderText);
+}
+header button {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 15px;
+    background: var(--buttonsBackground);
+    border-radius: 10px;
+    color: var(--backgroundColor);
+    position: absolute;
+    right: 0px;
+    top: 20px;
+}
+
+
+
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    header img {
+        max-width: 170px;
+        margin-right: 7%;
+    }
+    header a {
+        margin-right: 25px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    header img {
+        max-width: 140px;
+        margin-right: 0px;
+    }
+    header a {
+        margin-right: 15px;
+    }
+}
