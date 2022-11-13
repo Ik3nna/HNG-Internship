@@ -17,6 +17,7 @@
 }     
 body {
     font-family: var(--fontFamily);
+    overflow-x: hidden;
 }
 ul {
     list-style: none;
@@ -136,7 +137,40 @@ footer a:hover {
     margin: 100px auto;
     max-width: 100%;
     width: 90%;
+    text-align: center;
 }
+.soon h2 {
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 78px;
+    letter-spacing: -0.02em;
+    color: var(--heroTexts);
+    animation: bounce 3s infinite;
+    margin-bottom: 100px;
+}
+.soon span {
+    color: var(--herosubTexts);
+}
+.soon a {
+    background: var(--buttonsBackground);
+    color: var(--backgroundColor);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 
 
 @media (min-width: 992px) and (max-width: 1199px) {
