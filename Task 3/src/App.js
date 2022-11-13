@@ -1,7 +1,8 @@
 import React from "react";
 import Header from "./components/header";
+import Home from "./pages/home";
 import Footer from "./components/footer";
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 
 function App() {
   return(
@@ -10,9 +11,9 @@ function App() {
         <Header />
         
         <Routes>
-          {/* <Route path="/home" element={<Home />} />
+          <Route path="/home" element={<Home />} />
          
-          <Route path="/" element={<Navigate replace to="/home" />} /> */}
+          <Route path="/" element={<Navigate replace to="/home" />} />
         </Routes>
 
         <Footer />
