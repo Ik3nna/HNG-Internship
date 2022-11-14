@@ -7,7 +7,6 @@ function Community () {
         <main>
             <Header />
             <ComingSoon />
-            
         </main>
     );
 }

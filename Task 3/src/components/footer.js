@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { ImFacebook } from "react-icons/im"
+import { FaInstagram, FaTwitter } from "react-icons/fa";
 
 function Footer() {
 
@@ -11,8 +13,10 @@ function Footer() {
                         <img className="img-logo" src="/assets/footer-logo.svg" alt="footer-logo" />
                     </Link>
 
-                    <div>
-                        
+                    <div className="icons mt-5">
+                        <ImFacebook color="#F7F7F7"  />
+                        <FaInstagram color="#F7F7F7" className="insta" />
+                        <FaTwitter color="#F7F7F7" />
                     </div>
 
                     <p className="mt-5">&copy; 2022 Metabnb</p>

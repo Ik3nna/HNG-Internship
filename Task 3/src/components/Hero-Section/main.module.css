@@ -90,8 +90,8 @@
 @media (min-width: 992px) and (max-width: 1199px) {
     .content h2 {
         font-weight: 400;
-        font-size: 46px;
-        line-height: 64px;
+        font-size: 48px;
+        line-height: 67px;
         letter-spacing: -0.02em;
         color: var(--heroTexts);
     }
@@ -121,8 +121,8 @@
     }
     .content h2 {
         margin-top: 80px;
-        font-size: 46px;
-        line-height: 64px;
+        font-size: 48px;
+        line-height: 67px;
     }
     .content p {
         font-size: 20px;
@@ -175,8 +175,8 @@
 }
 @media (max-width: 767px) {
     .content h2 {
-        font-size: 34px;
-        line-height: 47px;
+        font-size: 40px;
+        line-height: 56px;
         margin-top: 70px;
     }
     .content p {
