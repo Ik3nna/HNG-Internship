@@ -20,7 +20,6 @@ function DropModal(props) {
         <Modal.Body>
           <p>Choose your preferred wallet</p>
           
-          <div className="body">
             <Accordion>
                 <Accordion.Item eventKey="0" className="item mb-3">
                     <Accordion.Header className="acHeader">
@@ -44,7 +43,7 @@ function DropModal(props) {
                     </Accordion.Body>
                 </Accordion.Item>
             </Accordion>
-          </div>
+            
         </Modal.Body>
       </Modal>
     );
