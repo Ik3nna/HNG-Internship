@@ -109,6 +109,8 @@ footer article {
     width: 90%;
     margin: auto;
     padding: 50px 0px 30px;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 footer article > div {
@@ -253,6 +255,34 @@ footer a:hover {
         border-left: 5px solid #A02279;
         border-bottom: none;
     }
+    footer article {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        align-items: flex-start;
+        margin: auto;
+    }
+    footer article > div:nth-of-type(3) {
+        margin-left: -80px;
+        margin-top: 40px;
+    }
+    footer article > div:nth-of-type(4) {
+        margin-left: -20px;
+        margin-top: 40px;
+    }
+    footer .img-logo {
+        margin: 0;
+    }
+    footer h6 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    footer p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        color: var(--footerText);
+    }
 
 
     /* Hamburger Menu */
@@ -329,5 +359,8 @@ footer a:hover {
     .hamburger-menu {
         top: 17px;
         right: 10px;
+    }
+    footer article > div:nth-of-type(3) {
+        margin-left: -70px;
     }
 }

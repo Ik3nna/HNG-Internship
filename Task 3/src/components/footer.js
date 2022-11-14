@@ -5,7 +5,7 @@ function Footer() {
 
     return(
         <footer>
-            <article className="d-flex align-items-center">
+            <article>
                 <div>
                     <Link to="/">
                         <img className="img-logo" src="/assets/footer-logo.svg" alt="footer-logo" />
