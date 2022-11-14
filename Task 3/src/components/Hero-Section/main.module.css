@@ -210,6 +210,14 @@
     .content h2 {
         margin-top: 40px;
     }
+    .content input {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .content button {
+        font-size: 14px;
+        line-height: 18px;
+    }
     .imgContainer img {
         max-width:  100%;
     }
