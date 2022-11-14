@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./adventure.module.css";
 import { Row, Col } from "react-bootstrap";
 import { homeAdventure } from "../data";
 
 function Adventure (){
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
     return(
         <section className={styles.content}>
             <h2 className="text-center mt-5 mb-5">Inspiration for your next adventure</h2>
