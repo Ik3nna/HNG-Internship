@@ -1,12 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styles from "./adventure.module.css";
 import { Row, Col } from "react-bootstrap";
 import { homeAdventure } from "../data";
 
 function Adventure (){
-    useEffect(() => {
-        AOS.init();
-    }, []);
 
     return(
         <section className={styles.content}>

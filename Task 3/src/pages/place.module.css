@@ -1,0 +1,101 @@
+.content {
+    background-color: var(--backgroundColor);
+    max-width: 100%;
+    width: 90%;
+    margin: 50px auto 100px;
+}
+.content article {
+    color: var(--heroTexts);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px auto 50px;
+    cursor: pointer;
+}
+.content article .location {
+    background: var(--heroBackground);
+    border: 1px solid #B4B4B4;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 160px;
+    width: 100%;
+    padding: 10px;
+}
+.content article > div img {
+    max-width: 24px;
+    height: 24px;
+    margin-left: 20px;
+}
+.subcontent {
+    background: var(--heroBackground);
+    border: 1px solid #D7D7D7;
+    border-radius: 15px;
+    max-width: 292px;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.image {
+    max-width: 260px;
+    margin: auto;
+}
+.subcontent div:nth-of-type(1), .subcontent div:nth-of-type(2) {
+    justify-content: space-between;
+    color: var(--heroTexts);
+    font-size: 12px;
+    line-height: 13px;
+    font-weight: 400;
+}
+.subcontent div:nth-of-type(1) p:nth-of-type(2) {
+    font-weight: 700;
+}
+.subcontent div:nth-of-type(3) img {
+    max-width: 12px;
+    height: 12px;
+    margin-right: 10px;
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .content article {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+        margin: 60px auto 30px;
+    }
+    .content article > div {
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .content article {
+        font-size: 16px;
+        line-height: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+        margin: -20px auto 30px;
+    }
+    .content article > div {
+        margin-bottom: 10px;
+        padding: 8px;
+    }
+    .content article > div img {
+        max-width: 20px;
+        height: 20px;
+        margin-left: 10px;
+    }
+    .content article .location {
+        padding: 8px;
+    }
+}
