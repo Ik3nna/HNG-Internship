@@ -6,6 +6,8 @@
     width: 92%;
     margin: auto;
     padding: 100px 0;
+    display: flex;
+    align-items: center;
 }
 .content h2 {
     font-weight: 700;
@@ -33,4 +35,71 @@
     color: var(--herosubTexts);
     padding: 10px 20px;
     border-radius: 8px;
+}
+.imgContainer img {
+    max-width: 704px;
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .content h2 {
+        font-size: 42px;
+        line-height: 52px;
+    }
+    .content p {
+        font-size: 18px;
+        line-height: 35px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .row {
+        text-align: center;
+    }
+    .imgContainer img {
+        max-width: 70%;
+        margin: -30px auto 40px;
+    }
+    .content h2 {
+        font-size: 42px;
+        line-height: 52px;
+    }
+    .content p {
+        font-size: 18px;
+        line-height: 35px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    .row {
+        text-align: center;
+    }
+    .imgContainer img {
+        max-width: 90%;
+        margin: -30px auto 40px;
+    }
+    .content h2 {
+        font-size: 36px;
+        line-height: 45px;
+    }
+    .content p {
+        font-size: 16px;
+        line-height: 31px;
+    }
+}
+@media (max-width: 576px) {
+    .row {
+        text-align: center;
+    }
+    .imgContainer img {
+        max-width: 100%;
+        margin: -40px auto 40px;
+    }
+    .content h2 {
+        font-size: 36px;
+        line-height: 45px;
+    }
+    .content p {
+        font-size: 16px;
+        line-height: 31px;
+    }
 }

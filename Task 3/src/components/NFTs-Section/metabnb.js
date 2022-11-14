@@ -8,7 +8,7 @@ function Metabnb () {
     return(
         <section className={`mt-3 ${styles.content}`}>
             <Row className={styles.row}>
-                <Col md={6}>
+                <Col xs={{ span: 12, order: "last" }} lg={{ span: 6, order: "first"}}>
                     <h2>
                         Metabnb NFTs
                     </h2>
@@ -22,6 +22,10 @@ function Metabnb () {
                     <Link to="/nfts">
                         Learn more
                     </Link>
+                </Col>
+
+                <Col xs={{ span: 12, order: "first" }} lg={{ span: 6, order: "last"}} className={styles.imgContainer}>
+                    <img src="/assets/Frame 59546.svg" alt="frame-59546" />
                 </Col>
             </Row>
             
