@@ -6,7 +6,7 @@ function Footer() {
     return(
         <footer>
             <article className="d-flex align-items-center">
-                <div md={3}>
+                <div>
                     <Link to="/">
                         <img className="img-logo" src="/assets/footer-logo.svg" alt="footer-logo" />
                     </Link>
@@ -18,7 +18,7 @@ function Footer() {
                     <p className="mt-5">&copy; 2022 Metabnb</p>
                 </div>
 
-                <div md={3}>
+                <div>
                     <h6>Community</h6>
                     <a href="/#">NFT</a>
                     <a href="/#">Tokens</a>
@@ -26,7 +26,7 @@ function Footer() {
                     <a href="/#">Discord</a>
                 </div>
 
-                <div md={3}>
+                <div>
                     <h6>Places</h6>
                     <a href="/#">Castle</a>
                     <a href="/#">Farms</a>
@@ -34,7 +34,7 @@ function Footer() {
                     <a href="/#">Learn more</a>
                 </div>
 
-                <div md={3}>
+                <div>
                     <h6>About us</h6>
                     <a href="/#">Road map</a>
                     <a href="/#">Creators</a>

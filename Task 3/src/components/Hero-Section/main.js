@@ -12,7 +12,7 @@ function Main () {
         <>
             <section className={styles.content}>
                 <Row>
-                    <Col xs={{ order: "last" }} md={{ span: 6, order: "first" }}>
+                    <Col xs={{ span: 12, order: "last" }} lg={{ span: 6, order: "first" }}>
                         <h2>
                             Rent a <span>Place</span> away from&nbsp;
                             <span>Home</span> in the Metaverse
@@ -32,7 +32,7 @@ function Main () {
                         </form>
                     </Col>
 
-                    <Col xs={{ order: "first" }} md={{ span: 6, order: "last" }} className={styles.imgContainer}>
+                    <Col xs={{  span: 12, order: "first" }} lg={{ span: 6, order: "last" }} className={styles.imgContainer}>
                         <img src="/assets/image 4.svg" alt="four" />
                         <img src="/assets/image 3.svg" alt="three" />
                         <img src="/assets/image 6.svg" alt="six" />

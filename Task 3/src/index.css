@@ -14,10 +14,13 @@
     --footer: #1D1D1E;
     --footerText: #F1F3F9;
     --fontFamily: 'Red Rose', cursive;
-}     
+}  
+html, body {
+    overflow-x: hidden;
+    position: relative;
+}   
 body {
     font-family: var(--fontFamily);
-    overflow-x: hidden;
 }
 ul {
     list-style: none;
@@ -182,7 +185,7 @@ footer a:hover {
         max-width: 170px;
     }
     .logo {
-        margin-right: 7%;
+        margin-right: 6%;
     }
     header a {
         margin-right: 25px;
@@ -193,15 +196,25 @@ footer a:hover {
         max-width: 140px;
     }
     .logo {
-        margin-right: 0px;
+        margin-right: 0;
     }
     header a {
-        margin-right: 15px;
+        margin-right: 20px;
+        font-size: 17px;
+        line-height: 20px;
+    }
+    header button {
+        padding: 10px;
+        top: 15px;
     }
 }
 @media (max-width: 767px) {
     .head {
         padding: 15px 0;
+    }
+    .img-logo {
+        max-width: 170px;
+        margin-left: -40px;
     }
     nav {
         position: fixed;
@@ -219,7 +232,6 @@ footer a:hover {
         flex-direction: column;
         align-items: flex-start;
         padding-top: 60px;
-        margin-left: -33px;
     }
     header a {
         color: var(--backgroundColor);
@@ -229,6 +241,9 @@ footer a:hover {
     header button {
         position: static;
         margin-left: 40px;
+    }
+    .active nav ul {
+        margin-left: -33px;
     }
     .active nav {
         transform: translateX(0);
@@ -249,7 +264,7 @@ footer a:hover {
         justify-content: center;
         position: absolute;
         top: 17px;
-        right: 0;
+        right: 10px;
         cursor: pointer;
         z-index: 12;
     }
@@ -311,11 +326,8 @@ footer a:hover {
     }
 }
 @media (max-width: 575px) {
-    .img-logo {
-        max-width: 170px;
-    }
     .hamburger-menu {
         top: 17px;
-        right: 0;
+        right: 10px;
     }
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "./components/header";
 import Home from "./pages/home";
 import Place from "./pages/place";
 import NFT from "./pages/nfts";
@@ -11,8 +10,6 @@ function App() {
   return(
     <>
       <BrowserRouter>
-        <Header />
-        
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/place" element={<Place />} />
@@ -20,7 +17,7 @@ function App() {
           <Route path="/community" element={<Community />} />
           <Route path="/" element={<Navigate replace to="/home" />} />
         </Routes>
-
+        
         <Footer />
       </BrowserRouter>
     </>
