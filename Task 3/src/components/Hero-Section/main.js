@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./main.module.css"
 import { Row, Col } from "react-bootstrap";
 
 function Main () {
-
     const handleSubmit = (e)=>{
         e.preventDefault();
     }

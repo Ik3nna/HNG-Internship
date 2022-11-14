@@ -11,9 +11,12 @@
     --buttonsBackground: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
     --placeholderText:  #B8B8B8;
     --adventureHeader: #000000;
+    --modalText: #333333;
+    --modalsubText: #000000;
     --footer: #1D1D1E;
     --footerText: #F1F3F9;
     --fontFamily: 'Red Rose', cursive;
+    --sora: 'Sora', sans-serif;
 }  
 html, body {
     overflow-x: hidden;
@@ -148,6 +151,52 @@ footer a {
 footer a:hover {
     color: var(--placeholderText);
 }
+
+
+/* Modal */
+.connect {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--modalText);
+}
+.connect p:nth-of-type(1) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--modalText);
+}
+.body {
+    font-family: var(--sora);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: var(--modalsubText);
+}
+.item {
+    background: #F8F9FA;
+    border: 1px solid #CFD8DC;
+    border-radius: 12px;
+}
+.acHeader p {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.accordion img {
+    width: 44px;
+    height: 44px;
+}
+.comingsoon {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0;
+    color: var(--heroTexts);
+}
+.comingsoon span {
+    color: var(--herosubTexts);
+}
+
 
 
 /* Coming-soon section */
