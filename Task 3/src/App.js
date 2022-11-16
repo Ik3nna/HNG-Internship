@@ -1,10 +1,15 @@
 import React from "react";
-import Home from "./pages/home";
-import Place from "./pages/place";
-import NFT from "./pages/nfts";
-import Community from "./pages/community";
+// import Home from "./pages/home";
+// import Place from "./pages/place";
+// import NFT from "./pages/nfts";
+// import Community from "./pages/community";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+
+const Home = React.lazy(()=>import("./pages/home"));
+const Place = React.lazy(()=>import("./pages/place"));
+const NFT = React.lazy(()=>import("./pages/nfts"));
+const Community = React.lazy(()=>import("./pages/community"));
 
 function App() {
   return(
