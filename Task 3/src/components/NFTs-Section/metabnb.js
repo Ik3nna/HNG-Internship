@@ -25,7 +25,7 @@ function Metabnb () {
                 </Col>
 
                 <Col xs={{ span: 12, order: "first" }} lg={{ span: 6, order: "last"}} className={styles.imgContainer}>
-                    <img src="/assets/Frame 59546.svg" alt="frame-59546" />
+                    <img src="/assets/Frame 59546.svg" alt="frame-59546" loading="lazy" />
                 </Col>
             </Row>
             
