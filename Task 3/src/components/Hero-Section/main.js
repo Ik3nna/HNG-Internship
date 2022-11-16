@@ -32,10 +32,10 @@ function Main () {
                     </Col>
 
                     <Col xs={{  span: 12, order: "first" }} lg={{ span: 6, order: "last" }} className={styles.imgContainer}>
-                        <img src="/assets/image 4.svg" alt="four" />
-                        <img src="/assets/image 3.svg" alt="three" />
-                        <img src="/assets/image 6.svg" alt="six" />
-                        <img src="/assets/image-5.svg" alt="five" />
+                        <img src="/assets/image 4.png" alt="four" />
+                        <img src="/assets/image 3.png" alt="three" />
+                        <img src="/assets/image 6.png" alt="six" />
+                        <img src="/assets/image 5.png" alt="five" />
                     </Col>
                 </Row>
             </section>

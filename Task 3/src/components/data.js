@@ -1,7 +1,7 @@
 export const homeAdventure = [
     {
         id: 1,
-        img: "/assets/Frame 151.svg",
+        img: "/assets/5.png",
         name: "Desert king",
         price: "1MBT per night",
         distance: "2345km away",
@@ -9,7 +9,7 @@ export const homeAdventure = [
     },
     {
         id: 2,
-        img: "/assets/Frame 151 (1).svg",
+        img: "/assets/6.png",
         name: "Desert king",
         price: "1MBT per night",
         distance: "2345km away",
@@ -17,7 +17,7 @@ export const homeAdventure = [
     },
     {
         id: 3,
-        img: "/assets/Frame 151 (2).svg",
+        img: "/assets/7.png",
         name: "Desert king",
         price: "1MBT per night",
         distance: "2345km away",
@@ -25,7 +25,7 @@ export const homeAdventure = [
     },
     {
         id: 4,
-        img: "/assets/Frame 151 (3).svg",
+        img: "/assets/8.png",
         name: "Desert king",
         price: "1MBT per night",
         distance: "2345km away",
@@ -33,7 +33,7 @@ export const homeAdventure = [
     },
     {
         id: 5,
-        img: "/assets/Frame 151 (4).svg",
+        img: "/assets/1.png",
         name: "Desert king",
         price: "1MBT per night",
         distance: "2345km away",
@@ -41,7 +41,7 @@ export const homeAdventure = [
     },
     {
         id: 6,
-        img: "/assets/Frame 151 (5).svg",
+        img: "/assets/2.png",
         name: "Desert king",
         price: "1MBT per night",
         distance: "2345km away",
@@ -49,7 +49,7 @@ export const homeAdventure = [
     },
     {
         id: 7,
-        img: "/assets/Frame 151 (6).svg",
+        img: "/assets/3.png",
         name: "Desert king",
         price: "1MBT per night",
         distance: "2345km away",
@@ -57,7 +57,7 @@ export const homeAdventure = [
     },
     {
         id: 8,
-        img: "/assets/Frame 151 (7).svg",
+        img: "/assets/4.png",
         name: "Desert king",
         price: "1MBT per night",
         distance: "2345km away",
@@ -69,7 +69,7 @@ export const homeAdventure = [
 export const placeAdventure = [
     {
         id: 1,
-        img: "/assets/1.svg",
+        img: "/assets/1.png",
         name: "Desert king",
         price: "1MBT per night",
         distance: "2345km away",
@@ -77,7 +77,7 @@ export const placeAdventure = [
     },
     {
         id: 2,
-        img: "/assets/2.svg",
+        img: "/assets/2.png",
         name: "Desert king",
         price: "1MBT per night",
         distance: "2345km away",
@@ -85,7 +85,7 @@ export const placeAdventure = [
     },
     {
         id: 3,
-        img: "/assets/3.svg",
+        img: "/assets/3.png",
         name: "Desert king",
         price: "1MBT per night",
         distance: "2345km away",
@@ -93,7 +93,7 @@ export const placeAdventure = [
     },
     {
         id: 4,
-        img: "/assets/4.svg",
+        img: "/assets/4.png",
         name: "Desert king",
         price: "1MBT per night",
         distance: "2345km away",
@@ -101,7 +101,7 @@ export const placeAdventure = [
     },
     {
         id: 5,
-        img: "/assets/5.svg",
+        img: "/assets/5.png",
         name: "Desert king",
         price: "1MBT per night",
         distance: "2345km away",
@@ -109,7 +109,7 @@ export const placeAdventure = [
     },
     {
         id: 6,
-        img: "/assets/6.svg",
+        img: "/assets/6.png",
         name: "Desert king",
         price: "1MBT per night",
         distance: "2345km away",
@@ -117,7 +117,7 @@ export const placeAdventure = [
     },
     {
         id: 7,
-        img: "/assets/7.svg",
+        img: "/assets/7.png",
         name: "Desert king",
         price: "1MBT per night",
         distance: "2345km away",
@@ -125,7 +125,7 @@ export const placeAdventure = [
     },
     {
         id: 8,
-        img: "/assets/8.svg",
+        img: "/assets/8.png",
         name: "Desert king",
         price: "1MBT per night",
         distance: "2345km away",
@@ -133,7 +133,7 @@ export const placeAdventure = [
     },
     {
         id: 9,
-        img: "/assets/9.svg",
+        img: "/assets/9.png",
         name: "Desert king",
         price: "1MBT per night",
         distance: "2345km away",
@@ -141,7 +141,7 @@ export const placeAdventure = [
     },
     {
         id: 10,
-        img: "/assets/10.svg",
+        img: "/assets/10.png",
         name: "Desert king",
         price: "1MBT per night",
         distance: "2345km away",
@@ -149,7 +149,7 @@ export const placeAdventure = [
     },
     {
         id: 11,
-        img: "/assets/11.svg",
+        img: "/assets/11.png",
         name: "Desert king",
         price: "1MBT per night",
         distance: "2345km away",
@@ -157,7 +157,7 @@ export const placeAdventure = [
     },
     {
         id: 12,
-        img: "/assets/12.svg",
+        img: "/assets/12.png",
         name: "Desert king",
         price: "1MBT per night",
         distance: "2345km away",
@@ -165,7 +165,7 @@ export const placeAdventure = [
     },
     {
         id: 13,
-        img: "/assets/13.svg",
+        img: "/assets/13.png",
         name: "Desert king",
         price: "1MBT per night",
         distance: "2345km away",
@@ -173,7 +173,7 @@ export const placeAdventure = [
     },
     {
         id: 14,
-        img: "/assets/14.svg",
+        img: "/assets/14.png",
         name: "Desert king",
         price: "1MBT per night",
         distance: "2345km away",
@@ -181,7 +181,7 @@ export const placeAdventure = [
     },
     {
         id: 15,
-        img: "/assets/15.svg",
+        img: "/assets/15.png",
         name: "Desert king",
         price: "1MBT per night",
         distance: "2345km away",
@@ -189,7 +189,7 @@ export const placeAdventure = [
     },
     {
         id: 16,
-        img: "/assets/16.svg",
+        img: "/assets/16.png",
         name: "Desert king",
         price: "1MBT per night",
         distance: "2345km away",

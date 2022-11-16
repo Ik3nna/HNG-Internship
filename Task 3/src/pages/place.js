@@ -35,7 +35,7 @@ function Place () {
                         const { id, img, name, price, distance, duration } = item;
                         return(
                             <Col md={3} key={id} className={`mb-4 ${styles.subcontent}`}>
-                                <img src={img} alt={name} className={styles.image} loading="lazy" />
+                                <img src={img} alt={name} className={styles.image} />
 
                                 <div className="d-flex align-items-center mt-2">
                                     <p>{name}</p>
